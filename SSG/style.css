@@ -1,0 +1,112 @@
+:root {
+    --bg-color: #f4f4f9;
+    --text-color: #1a1a1a;
+    --container-bg: #ffffff;
+    --input-border: #767676; 
+    --btn-bg: #0056b3;
+    --btn-text: #ffffff;
+    --error-color: #b00020;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --container-bg: #1e1e1e;
+    --input-border: #bb86fc;
+    --btn-bg: #bb86fc;
+    --btn-text: #121212;
+    --error-color: #cf6679;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+#theme-toggle {
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.login-container {
+    background-color: var(--container-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 350px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid var(--input-border);
+    border-radius: 4px;
+    background-color: var(--container-bg);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+#btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#message-box {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.error {
+    color: var(--error-color);
+}
+
+.success {
+    color: #2e7d32;
+}
